@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+@-webkit-keyframes cursor_anim {
+  0%{background: white; }
+  45%{background: white; }
+  46%{background: rgba(255, 255, 255, .02);}
+  89%{background: rgba(255, 255, 255, .02);}
+  90%{background: white; }
+  100%{background: white; }
+}
+
+.main {
+  height: 100%;
+
+  &-words {
+    &__button {
+      font-family: 'Ubuntu Mono', monospace;
+      padding: 12px 50px;
+      font-size: 18px;
+      margin-top: 25px;
+      background: white;
+      border: 0;
+      color: #084f8e;
+      line-height: 1.3333333;
+      border-radius: 6px;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      font-weight: 400;
+      transition: all .3s;
+
+      &:hover {
+        background: white;
+        box-shadow: 0 0 10px #B5FB98;
+        color: black;
+      }
+    }
+  }
+
+  &__img {
+    background: url('/assets/img/rocket_startup_monitor_screen_computer_icon_124621.svg') center no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 500px;
+    margin-left: 100px;
+  }
+
+  &__h1 {
+    font-size: 39px;
+    color: #fff;
+    font-weight: 300;
+
+    &-dash {
+      display: inline-block;
+      width: 2px;
+      margin-left: 5px;
+      height: 40px;
+      margin-bottom: -4px;
+      background: rgba(255, 255, 255, 1);
+      -webkit-animation: cursor_anim 1s infinite;
+      position: absolute;
+    }
+  }
+
+  &-center {
+    display: flex;
+    flex-flow: row;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+  }
+}
+

@@ -1,0 +1,19 @@
+<div class="game-input">
+  <div class="game-input__string" @startGame id="game-input__string" *ngIf="!isCompleted; else gameCompleted"></div>
+  <ng-template #gameCompleted>
+    <div @gameString class="game-input__completed"><img src="https://img.icons8.com/color/48/000000/ok--v1.png"/> Ваша скорость печати: {{speed}}</div>
+  </ng-template>
+</div>
+
+<div class="game-speed">
+  <div class="wrapper"></div>
+  <div class="range"></div>
+  <div class="rang-title"></div>
+  <svg class="meter">
+    <circle class="meter-left" r="96" cx="135" cy="142"></circle>
+    <circle class="meter-center" r="96" cx="136" cy="142"></circle>
+    <circle class="meter-right" r="96" cx="138" cy="142"></circle>
+    <polygon class="meter-clock" points="129,145 137,90 145,145" style="transform: rotate(-90deg);"></polygon>
+    <circle class="meter-circle" r="10" cx="137" cy="145"></circle>
+  </svg>
+</div>
