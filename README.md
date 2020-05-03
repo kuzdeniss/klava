@@ -1,2 +1,2 @@
 # klava
-(https://prnt.sc/sa1nxe)
+![alt text](https://prnt.sc/sa1nxe)
